@@ -1,0 +1,24 @@
+.main_page_wrapper,
+.inline_banner {
+  width: 1240px;
+  margin: 0 auto;
+}
+.main_page_wrapper {
+  padding-bottom: 20px;
+}
+
+.inline_banner {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+.inline_banner:hover img {
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+.inline_banner img {
+  width: 100%;
+  transition: all 0.3s ease;
+}

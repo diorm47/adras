@@ -1,0 +1,41 @@
+.carousel_offer_list_items {
+  display: flex;
+}
+.carousel_offers_list .main_card_item {
+  width: 230px !important;
+}
+
+.carousel_offers_list .slick-prev,
+.carousel_offers_list .slick-next {
+  background: #fff;
+  border: 1px solid hsla(220, 4%, 48%, 0.3);
+  border-radius: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  opacity: 0.5;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+.carousel_offers_list .slick-prev:hover,
+.carousel_offers_list .slick-next:hover {
+  background: #fff;
+}
+.carousel_offers_list .slick-prev {
+  left: 25px;
+  z-index: 11;
+}
+.carousel_offers_list .slick-prev::before {
+  display: none;
+}
+.carousel_offers_list .slick-next::before {
+  display: none;
+}
+
+.carousel_offers_list .slick-next {
+  right: 25px;
+}

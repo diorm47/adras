@@ -1,0 +1,89 @@
+.footer_wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.top_footer_links {
+  display: flex;
+  margin-bottom: 70px;
+}
+.top_footer_link_block {
+  width: 25%;
+}
+
+.top_footer_link_block_title p {
+  color: #1f1f26;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.top_footer_link p {
+  color: #4d4e59;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  margin-bottom: 19px;
+}
+.apple_download {
+  margin-right: 24px;
+}
+.apple_download svg * {
+  fill: #000;
+}
+.download_app_footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.download_app_footer div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.download_app_footer p {
+  font-size: 0.8rem;
+  line-height: 1.2em;
+  margin-left: 5px;
+}
+
+.footer_socials {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.footer_socials svg {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.footer_bottom_policy {
+  padding: 16px 0px;
+  border-top: 1px solid rgba(118, 121, 127, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_footer_policy {
+  display: flex;
+}
+.left_footer_policy p {
+  color: rgb(31, 31, 38);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-right: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.footer_company_descriptions p {
+  color: rgb(77, 78, 89);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+}
