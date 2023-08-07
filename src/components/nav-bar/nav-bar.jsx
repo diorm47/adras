@@ -10,8 +10,10 @@ import { ReactComponent as BagIcon } from "../../assets/icons/bag.svg";
 import { ReactComponent as FavoriteIcon } from "../../assets/icons/favorite.svg";
 import { ReactComponent as SearchingIcon } from "../../assets/icons/searching-icon.svg";
 import katalog_icon from "../../assets/icons/katalog.png";
+import { useSelector } from "react-redux";
 
 function NavBar() {
+  const inCart = useSelector((state) => state.cart.cart);
   return (
     <nav>
       <div className="navbar_wrapper">
@@ -53,34 +55,46 @@ function NavBar() {
                 <Logo />
               </div>
             </NavLink>
-            <button className="catalogue_btn">
-              <img src={katalog_icon} alt="" />
-              <p>Katalog</p>
-            </button>
-            <div className="searching_input">
-              <div className="searching_input_item">
-                <input
-                  type="text"
-                  placeholder="Mahsulotlar va turkumlar izlash"
-                />
-                <button>
-                  <SearchingIcon />
-                </button>
+            <div className="catalogue_searching">
+              <button className="catalogue_btn">
+                <img src={katalog_icon} alt="" />
+                <p>Katalog</p>
+              </button>
+              <div className="searching_input">
+                <div className="searching_input_item">
+                  <input
+                    type="text"
+                    placeholder="Mahsulotlar va turkumlar izlash"
+                  />
+                  <button>
+                    <SearchingIcon />
+                  </button>
+                </div>
               </div>
             </div>
+
             <div className="nav_actions_btns">
               <div className="nav_actions_btn">
                 <LoginIcon />
                 <p>Kirish</p>
               </div>
-              <div className="nav_actions_btn">
-                <FavoriteIcon />
-                <p>Saralangan</p>
-              </div>
-              <div className="nav_actions_btn">
-                <BagIcon />
-                <p>Savat</p>
-              </div>
+              <NavLink to="/wishes">
+                <div className="nav_actions_btn">
+                  <FavoriteIcon />
+                  <p>Saralangan</p>
+                </div>
+              </NavLink>
+              <NavLink to="/cart">
+                <div className="nav_actions_btn">
+                  <BagIcon />
+                  <p>Savat</p>
+                  {!inCart.length || (
+                    <div className="in_cart_det">
+                      <p>{inCart.length}</p>
+                    </div>
+                  )}
+                </div>
+              </NavLink>
             </div>
           </div>
         </div>

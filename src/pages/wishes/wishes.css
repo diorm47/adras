@@ -1,0 +1,54 @@
+.carts_title p {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 500;
+  padding-top: 35px;
+}
+
+.select_sort_carts {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 14px;
+}
+
+.select_sort_carts p {
+  opacity: 0.87;
+  color: #62656a;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0 12px;
+}
+
+.select_sort_carts select {
+  border-radius: 4px;
+
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  padding: 0 2rem 0 1rem;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220px;
+  outline: none;
+}
+
+.carts_selected_list {
+  grid-row-gap: 32px;
+  grid-column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+    
