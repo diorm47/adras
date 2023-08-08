@@ -9,6 +9,8 @@ export const school_data = [
     price_per_month: 1444,
     product_badge: "Maktab bozori",
     image: "/data-img/img1.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 2,
@@ -20,6 +22,8 @@ export const school_data = [
     discount_price: 600,
     product_badge: "Maktab bozori",
     image: "/data-img/img2.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 3,
@@ -31,6 +35,8 @@ export const school_data = [
     discount_price: 100000,
     product_badge: "Maktab bozori",
     image: "/data-img/img3.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 4,
@@ -42,6 +48,8 @@ export const school_data = [
     discount_price: 13000,
     product_badge: "Maktab bozori",
     image: "/data-img/img4.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 5,
@@ -54,6 +62,8 @@ export const school_data = [
     discount_price: 170000,
     product_badge: "Maktab bozori",
     image: "/data-img/img5.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 6,
@@ -65,6 +75,8 @@ export const school_data = [
     price_per_month: 1444,
     product_badge: "Maktab bozori",
     image: "/data-img/img1.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 7,
@@ -76,6 +88,8 @@ export const school_data = [
     discount_price: 600,
     product_badge: "Maktab bozori",
     image: "/data-img/img2.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 8,
@@ -87,6 +101,8 @@ export const school_data = [
     discount_price: 100000,
     product_badge: "Maktab bozori",
     image: "/data-img/img3.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 9,
@@ -98,6 +114,8 @@ export const school_data = [
     discount_price: 13000,
     product_badge: "Maktab bozori",
     image: "/data-img/img4.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 10,
@@ -110,6 +128,8 @@ export const school_data = [
     discount_price: 170000,
     product_badge: "Maktab bozori",
     image: "/data-img/img5.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 11,
@@ -121,6 +141,8 @@ export const school_data = [
     price_per_month: 1444,
     product_badge: "Maktab bozori",
     image: "/data-img/img1.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 12,
@@ -132,6 +154,8 @@ export const school_data = [
     discount_price: 600,
     product_badge: "Maktab bozori",
     image: "/data-img/img2.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 13,
@@ -143,6 +167,8 @@ export const school_data = [
     discount_price: 100000,
     product_badge: "Maktab bozori",
     image: "/data-img/img3.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 14,
@@ -154,6 +180,8 @@ export const school_data = [
     discount_price: 13000,
     product_badge: "Maktab bozori",
     image: "/data-img/img4.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   {
     id: 15,
@@ -166,6 +194,8 @@ export const school_data = [
     discount_price: 170000,
     product_badge: "Maktab bozori",
     image: "/data-img/img5.jpg",
+    count: 1,
+    isInCartActive: true,
   },
   // {
   //   id: 16,

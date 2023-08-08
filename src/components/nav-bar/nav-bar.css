@@ -80,6 +80,8 @@ nav {
   align-items: center;
   margin-left: 8px;
   min-width: 120px;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 .lang_changer p {
   margin-left: 6px;
@@ -165,6 +167,9 @@ nav {
 
   border-radius: 4px;
 }
+.nav_actions_btn:last-child {
+  margin-right: 0;
+}
 .nav_actions_btns .nav_actions_btn:hover {
   background-color: #f4f5f5;
 }
@@ -180,7 +185,7 @@ nav {
   flex-wrap: nowrap;
   overflow: hidden;
   align-items: center;
-  margin: 10px 0 12px;
+  margin: 10px 0 5px;
   width: 100%;
   height: 40px;
 }
@@ -189,22 +194,55 @@ nav {
   cursor: pointer;
   margin: 0 10px;
   overflow: hidden;
+  display: inline-block;
   position: relative;
+  padding-bottom: 4px;
+}
+
+
+.nav_bottom_filter_item ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+.nav_bottom_filter_item :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hover_after_none {
+  position: static !important;
+}
+.nav_bottom_filter_item:first-child {
+  margin-left: 0;
+}
+.nav_bottom_filter_item:last-child {
+  margin-right: 0;
 }
 .nav_bottom_filter_item p {
   border-bottom: 2px solid transparent;
   font-size: 0.875rem;
-  margin-bottom: -1px;
-  padding-bottom: 6px;
+  opacity: 0.87;
   color: rgba(0, 0, 0, 0.7);
   flex-wrap: nowrap;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
-
+.nav_bottom_filter_item p:hover {
+  transition: all 0.3s ease;
+  color: #000;
+  opacity: 1;
+}
 .catalogue_searching {
   display: flex;
   align-items: center;
-  width: 650px;
+  width: 620px;
 }
 
 .in_cart_det {
@@ -223,4 +261,26 @@ nav {
   margin: 0 !important;
   color: #fff !important;
   font-size: 12px !important;
+}
+
+.nav_promolink {
+  display: flex;
+  align-items: center;
+}
+
+.nav_promolink img {
+  width: 24px;
+}
+.nav_promolink p {
+  color: #000 !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+.nav_showmore {
+  display: flex;
+  align-items: center;
 }

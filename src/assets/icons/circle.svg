@@ -1,0 +1,4 @@
+<svg width="36" height="36" class="circle__svg">
+    <circle cx="18" cy="18" r="16" class="circle__progress circle__progress--path" style="stroke-width: 2; stroke: rgb(22, 202, 78);"></circle>
+    <circle cx="18" cy="18" r="16" class="circle__progress circle__progress--fill" style="initialStroke: 100.53096491487338;stroke-width: 2; stroke: rgb(22, 202, 78); stroke-dashoffset: 98.069;"></circle>
+</svg>

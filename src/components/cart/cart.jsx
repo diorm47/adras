@@ -35,9 +35,7 @@ function Cart({ data }) {
 
   const addDelCart = (data) => {
     const isItemInCart = inCart.some((item) => item.id === data.id);
-    if (isItemInCart) {
-      dispatch(deleteFromCart(data.id));
-    } else {
+    if (!isItemInCart) {
       dispatch(addToCart(data));
     }
   };
@@ -77,18 +75,26 @@ function Cart({ data }) {
                 </p>
               </div>
               <div className="creadit_price">
-                <p>{item.price_per_month} so'm/oyiga</p>
+                <p>
+                  {new Intl.NumberFormat("ru-RU").format(item.price_per_month)}
+                  {" "}  so'm/oyiga
+                </p>
               </div>
               <div className="main_card_item_prices">
                 <div>
-                  <p>{item.discount_price} so'm</p>
-                  <p>{item.real_price} so'm</p>
+                  <p>
+                    {new Intl.NumberFormat("ru-RU").format(item.discount_price)}
+                    so'm
+                  </p>
+                  <p>
+                    {new Intl.NumberFormat("ru-RU").format(item.real_price)}so'm
+                  </p>
                 </div>
                 <div
                   className="shopping_cart_cart"
                   onClick={() => addDelCart(item)}
                 >
-                  <CartIcon  />
+                  <CartIcon />
                   {/* inCart.some((data) => data.id === item.id)
                   ? "Куплен"
                   : "Купить" */}

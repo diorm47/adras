@@ -1,17 +1,19 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/nav-bar/nav-bar";
 import Footer from "./components/footer/footer";
-import Cart from "./pages/cart/cart";
-import Wishes from "./pages/wishes/wishes";
+import Login from "./components/modals/login";
 
 // Lazy load pages
 const MainPage = React.lazy(() => import("./pages/main-page/main-page"));
+const Cart = React.lazy(() => import("./pages/cart/cart"));
+const Wishes = React.lazy(() => import("./pages/wishes/wishes"));
 
 function App() {
+  const [activeModal, setActiveModal] = useState(false);
   return (
     <>
-      <NavBar />
+      <NavBar setActiveModal={setActiveModal} />
 
       <div className="app_content">
         <Suspense fallback={".....Loading"}>
@@ -26,6 +28,7 @@ function App() {
           </Routes>
         </Suspense>
       </div>
+      {activeModal ? <Login setActiveModal={setActiveModal} /> : ""}
       <Footer />
     </>
   );

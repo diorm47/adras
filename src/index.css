@@ -30,3 +30,9 @@ input,
 button {
   -webkit-tap-highlight-color: transparent;
 }
+
+
+.main_page_wrapper{
+  width: 1240px;
+  margin: 0 auto;
+}
