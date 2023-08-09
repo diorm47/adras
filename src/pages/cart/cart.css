@@ -103,8 +103,8 @@
 }
 
 .delievering_date div {
-  border: 1px solid #7000ff;
-  color: #7000ff;
+  border: 1px solid #2caadd;
+  color: #2caadd;
   border-radius: 2px;
 
   font-size: 0.75rem;
@@ -244,7 +244,7 @@
   line-height: 1.75rem;
 }
 
-.cart_item_price p:last-child {
+.cart_item_price .ci_d_price {
   color: #757575;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -363,7 +363,7 @@
 .checkout_btn {
   width: 100%;
 
-  background: #7000ff;
+  background: #2caadd;
   color: #fff;
   border-radius: 12px;
 

@@ -1,10 +1,11 @@
 import React from "react";
 import empty_wishes_img from "../../assets/images/empty-wishes-img.webp";
 import "./wishes.css";
+import "../cart/cart.css";
 import { useSelector } from "react-redux";
 import Cart from "../../components/cart/cart";
 
-function Wishes() {
+function Wishes({ setActiveModal }) {
   const favorites = useSelector((state) => state.favorite.favorite);
 
   return (
@@ -38,7 +39,12 @@ function Wishes() {
             saralanganlar saqlanib qoladi
           </p>
 
-          <button className="main_button_template">Akkauntga kirish</button>
+          <button
+            className="main_button_template"
+            onClick={() => setActiveModal(true)}
+          >
+            Akkauntga kirish
+          </button>
         </div>
       )}
     </div>

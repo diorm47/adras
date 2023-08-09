@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import empty_cart_img from "../../assets/images/empty-cart-img.webp";
 import CarouselOffer from "../../components/carousel-offer/carousel-offer";
 import { school_data } from "../../components/data";
@@ -10,16 +10,17 @@ import {
   incrementItem,
   setActiveInCart,
   setDisActiveInCart,
-  toggleActiveInCart,
 } from "../../redux/cart-reducer";
 import "./cart.css";
+import "../../components/cart/cart.css"
 
-import { ReactComponent as TrashIcon } from "../../assets/icons/trash-icon.svg";
-import { ReactComponent as CheckoutIcon } from "../../assets/icons/circle.svg";
 import { ReactComponent as CheckedIcon } from "../../assets/icons/checked.svg";
+import { ReactComponent as CheckoutIcon } from "../../assets/icons/circle.svg";
+import { ReactComponent as TrashIcon } from "../../assets/icons/trash-icon.svg";
 
 function Cart() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const inCart = useSelector((state) => state.cart.cart);
   const addDelCart = (data) => {
     dispatch(deleteFromCart(data.id));
@@ -40,6 +41,10 @@ function Cart() {
     } else {
       dispatch(setActiveInCart(item.id));
     }
+  };
+
+  const redirectCheckout = () => {
+    navigate("/checkout");
   };
 
   return (
@@ -112,7 +117,7 @@ function Cart() {
                               )}{" "}
                               so'm
                             </p>
-                            <p>
+                            <p className="ci_d_price">
                               {new Intl.NumberFormat("ru-RU").format(
                                 item.discount_price * item.count
                               )}
@@ -227,6 +232,7 @@ function Cart() {
                   </div>
                 </div>
                 <button
+                  onClick={redirectCheckout}
                   className={
                     inCart.reduce(
                       (accumulator, current) =>

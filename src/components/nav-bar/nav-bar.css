@@ -32,6 +32,9 @@ nav {
   cursor: pointer;
 }
 
+.left_main_logo img {
+  width: 170px;
+}
 .top_nav_city p {
   color: #141415;
   font-size: 14px;
@@ -110,7 +113,7 @@ nav {
   line-height: 18px;
   font-size: 14px;
   font-weight: 500;
-  color: #33c;
+  color: #2caadd;
   font-weight: 500;
 }
 
@@ -246,7 +249,7 @@ nav {
 }
 
 .in_cart_det {
-  background-color: #7000ff;
+  background-color: #2caadd;
   border-radius: 2px;
   color: #fff;
   font-size: 0.75rem;
@@ -283,4 +286,8 @@ nav {
 .nav_showmore {
   display: flex;
   align-items: center;
+}
+
+.dn_first_nav {
+  display: none !important;
 }

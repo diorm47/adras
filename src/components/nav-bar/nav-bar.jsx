@@ -4,7 +4,6 @@ import "./nav-bar.css";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as LocationIcon } from "../../assets/icons/location.svg";
 import { ReactComponent as UzbFlag } from "../../assets/icons/uzb-flag.svg";
-import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 import { ReactComponent as LoginIcon } from "../../assets/icons/user.svg";
 import { ReactComponent as BagIcon } from "../../assets/icons/bag.svg";
 import { ReactComponent as FavoriteIcon } from "../../assets/icons/favorite.svg";
@@ -13,12 +12,14 @@ import { ReactComponent as DownArrow } from "../../assets/icons/down-arrow.svg";
 import katalog_icon from "../../assets/icons/katalog.png";
 import { useSelector } from "react-redux";
 import halolnasiya from "../../assets/icons/halol-nasiya.png";
+import mainLogo from "../../assets/icons/main-logo.png";
 
-function NavBar({ setActiveModal }) {
+function NavBar({ setActiveModal, activeSecondNav }) {
   const inCart = useSelector((state) => state.cart.cart);
+  console.log(activeSecondNav);
   return (
-    <nav>
-      <div className="navbar_wrapper">
+    <nav className={activeSecondNav ? "dn_first_nav" : ""}>
+      <div className={activeSecondNav ? "dn_first_nav" : "navbar_wrapper"}>
         <div className="top_nav_bar">
           <div className="top_nav_bar_wrapper">
             <div className="top_nav_left">
@@ -54,7 +55,7 @@ function NavBar({ setActiveModal }) {
           <div className="main_nav_bar_wrapper">
             <NavLink to="/">
               <div className="left_main_logo">
-                <Logo />
+                <img src={mainLogo} alt="" />
               </div>
             </NavLink>
             <div className="catalogue_searching">
