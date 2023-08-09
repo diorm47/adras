@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import NavBar from "./components/nav-bar/nav-bar";
 import Footer from "./components/footer/footer";
 import Login from "./components/modals/login";
+import Loading from "./pages/loading/loading";
 
 // Lazy load pages
 const MainPage = React.lazy(() => import("./pages/main-page/main-page"));
@@ -29,7 +30,7 @@ function App() {
       />
 
       <div className="app_content">
-        <Suspense fallback={".....Loading"}>
+        <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/cart" element={<Cart />} />

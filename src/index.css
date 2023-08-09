@@ -31,8 +31,11 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
-
-.main_page_wrapper{
+.main_page_wrapper {
   width: 1240px;
   margin: 0 auto;
+}
+
+.app_content {
+  min-height: 80vh;
 }
