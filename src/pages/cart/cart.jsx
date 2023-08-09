@@ -12,7 +12,7 @@ import {
   setDisActiveInCart,
 } from "../../redux/cart-reducer";
 import "./cart.css";
-import "../../components/cart/cart.css"
+import "../../components/cart/cart.css";
 
 import { ReactComponent as CheckedIcon } from "../../assets/icons/checked.svg";
 import { ReactComponent as CheckoutIcon } from "../../assets/icons/circle.svg";
@@ -258,6 +258,9 @@ function Cart() {
                 >
                   Rasmiylashtirishga o'tish
                 </button>
+                <a href="tel:+998999999999">
+                  <button className="checkout_btn">Qo'ng'iroq qilish</button>
+                </a>
               </div>
             </div>
           </div>
