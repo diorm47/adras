@@ -4,6 +4,8 @@ import "./wishes.css";
 import "../cart/cart.css";
 import { useSelector } from "react-redux";
 import Cart from "../../components/cart/cart";
+import { school_data } from "../../components/data";
+import CarouselOffer from "../../components/carousel-offer/carousel-offer";
 
 function Wishes({ setActiveModal }) {
   const favorites = useSelector((state) => state.favorite.favorite);
@@ -47,6 +49,10 @@ function Wishes({ setActiveModal }) {
           </button>
         </div>
       )}
+
+      <div className="best_sellings">
+        <CarouselOffer title="Ommabop mahsulotlar" data={school_data} />
+      </div>
     </div>
   );
 }

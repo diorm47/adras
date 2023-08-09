@@ -4,6 +4,8 @@ import NavBar from "./components/nav-bar/nav-bar";
 import Footer from "./components/footer/footer";
 import Login from "./components/modals/login";
 import Loading from "./pages/loading/loading";
+import ScrolToTop from "./components/scroll_to_top/scrolToTop";
+import Categories from "./pages/categories/categories";
 
 // Lazy load pages
 const MainPage = React.lazy(() => import("./pages/main-page/main-page"));
@@ -24,6 +26,8 @@ function App() {
   }, [location.pathname]);
   return (
     <>
+      <ScrolToTop />
+
       <NavBar
         setActiveModal={setActiveModal}
         activeSecondNav={activeSecondNav}
@@ -43,9 +47,9 @@ function App() {
               element={<Checkout setActiveModal={setActiveModal} />}
             />
 
-            {/* <Route path="/about-item/:name" element={<AboutItem />} />
-         
-            <Route path="*" element={<NotFound />} /> */}
+            <Route path="/categories" element={<Categories />} />
+
+            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </Suspense>
       </div>

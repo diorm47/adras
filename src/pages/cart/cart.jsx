@@ -270,9 +270,6 @@ function Cart() {
               data={school_data}
             />
           </div>
-          <div className="best_sellings">
-            <CarouselOffer title="Ommabop mahsulotlar" data={school_data} />
-          </div>
         </>
       ) : (
         <div className="empty_cart_block">
@@ -287,6 +284,9 @@ function Cart() {
           </NavLink>
         </div>
       )}
+      <div className="best_sellings">
+        <CarouselOffer title="Ommabop mahsulotlar" data={school_data} />
+      </div>
     </div>
   );
 }

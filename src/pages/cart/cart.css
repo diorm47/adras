@@ -31,7 +31,7 @@
 }
 
 .main_button_template {
-  background-color: #6e00ff;
+  background-color: #2caadd;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -291,6 +291,7 @@
 }
 .checkout_description_text p:first-child {
   font-size: 14px;
+  margin-bottom: 8px;
 }
 .checkout_description_text span {
   font-weight: 600;

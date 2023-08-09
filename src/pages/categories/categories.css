@@ -1,0 +1,39 @@
+.categories_top_menu {
+  display: flex;
+  align-items: center;
+}
+
+.categories_top_menu p,
+.categories_top_menu span {
+  color: #000;
+  font-size: 12px;
+  opacity: 0.54;
+  transition: all 0.3s ease;
+}
+.categories_top_menu span {
+  margin: 0 5px;
+}
+.categories_top_menu a:hover p {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.categories_select {
+    display: flex;
+    align-items: center;
+}
+.categories_top_title {
+    padding-top: 35px;
+}
+.categories_top_title .select_sort_carts {
+    justify-content: space-between;
+}
+.categories_top_title .carts_title p {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    margin-right: 24px;
+    font-weight: 500;
+    color: #000;
+}
