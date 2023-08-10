@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { ReactComponent as RightArrow } from "../../assets/icons/offer-right.svg";
 import "./carousel-offer.css";
+import "../cart/cart.css"
 
 import { ReactComponent as LeftArrow } from "../../assets/icons/left-arrow.svg";
 import { ReactComponent as RightArrowCar } from "../../assets/icons/right-arrow.svg";
@@ -155,13 +156,14 @@ function CarouselOffer({ data, title }) {
                         </p>
                       </div>
                       <div
-                        className="shopping_cart_cart"
+                        className={
+                          inCart.some((data) => data.id === item.id)
+                            ? "shopping_cart_cart added_to_cart"
+                            : "shopping_cart_cart"
+                        }
                         onClick={() => addDelCart(item)}
                       >
                         <CartIcon />
-                        {/* inCart.some((data) => data.id === item.id)
-                  ? "Куплен"
-                  : "Купить" */}
                       </div>
                     </div>
                   </div>

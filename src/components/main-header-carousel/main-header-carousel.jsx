@@ -37,6 +37,8 @@ function MainHeaderCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
     arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
