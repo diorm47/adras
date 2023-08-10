@@ -1,0 +1,41 @@
+.snacbar_wrapper {
+  width: 800px;
+  height: 120px;
+  padding: 20px;
+  background: #fff;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  margin-left: -400px;
+  z-index: 1111;
+  display: flex;
+  align-items: center;
+
+  -webkit-box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.snacbar_wrapper img {
+  width: 70px;
+  margin-right: 30px;
+}
+
+.snacbar_wrapper p:first-child {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.snacbar_wrapper p:last-child {
+  font-size: 17px;
+}
+.snacbar_wrapper .exit_btn {
+  cursor: pointer;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  bottom: 20px;
+  right: 20px;
+  font-size: 17px;
+  color: #2caadd;
+  font-weight: 500;
+}

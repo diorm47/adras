@@ -35,7 +35,7 @@ function Login({ setActiveModal }) {
           <p className="sign_in_title">Telefon raqamini kiriting</p>
           <p className="sign_in_des">Tasdiqlash kodini SMS orqali yuboramiz</p>
           <div className="input_wrapper_sign">
-            <div class="number_before">+998</div>
+            <div className="number_before">+998</div>
             <InputMask
               mask="99 999-99-99"
               value={phone}

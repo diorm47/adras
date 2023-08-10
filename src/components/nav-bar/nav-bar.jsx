@@ -16,7 +16,6 @@ import mainLogo from "../../assets/icons/main-logo.png";
 
 function NavBar({ setActiveModal, activeSecondNav }) {
   const inCart = useSelector((state) => state.cart.cart);
-  console.log(activeSecondNav);
   return (
     <nav className={activeSecondNav ? "dn_first_nav" : ""}>
       <div className={activeSecondNav ? "dn_first_nav" : "navbar_wrapper"}>

@@ -7,6 +7,7 @@ import Loading from "./pages/loading/loading";
 import ScrolToTop from "./components/scroll_to_top/scrolToTop";
 import Categories from "./pages/categories/categories";
 
+
 // Lazy load pages
 const MainPage = React.lazy(() => import("./pages/main-page/main-page"));
 const Cart = React.lazy(() => import("./pages/cart/cart"));
@@ -26,6 +27,7 @@ function App() {
   }, [location.pathname]);
   return (
     <>
+   
       <ScrolToTop />
 
       <NavBar

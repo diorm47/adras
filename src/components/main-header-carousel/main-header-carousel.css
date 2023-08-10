@@ -1,11 +1,15 @@
 .main_page_carousel_item {
   width: 100%;
+
+}
+.main_page_carousel {
+  border-radius: 10px;
+  overflow: hidden;
   margin-bottom: 30px;
 }
 .main_page_carousel_item img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
 }
 
 .main_page_carousel .slick-dots {
@@ -44,8 +48,7 @@
 }
 .main_page_carousel .slick-prev:hover,
 .main_page_carousel .slick-next:hover {
-    background: #fff;
-
+  background: #fff;
 }
 .main_page_carousel .slick-prev {
   left: 25px;
